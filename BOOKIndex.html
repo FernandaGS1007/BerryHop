@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre | Diseñadora de Libros</title>
+    <!-- Fonts de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <style>
+        :root {
+            --color-primario: #FF9E7D; /* Coral */
+            --color-secundario: #A5E6BA; /* Verde menta */
+            --color-fondo: #FFF5F1; /* Beige rosado */
+            --color-texto: #3A3A3A;
+            --color-beige: #F5E9D9; /* Beige para el cintillo */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Lilita One', cursive;
+            color: #FF6B6B;
+        }
+
+        /* Header con logo + nombre */
+        header {
+            background-color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .logo-img {
+            width: 200px;
+            height: 100px;
+          
+            object-fit: cover;
+        }
+
+        /* Barra de navegación principal */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--color-texto);
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            color: #FF6B6B;
+            transform: scale(1.05);
+        }
+
+        /* Cintillo de áreas de trabajo (beige) */
+        .areas-trabajo {
+            background-color: var(--color-beige);
+            padding: 0.8rem;
+            overflow-x: auto;
+            white-space: nowrap;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .areas-trabajo a {
+            color: var(--color-texto);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 1rem;
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .areas-trabajo a:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            transform: scale(1.05);
+        }
+
+        /* Sección Hero */
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .hero img {
+            width: 150px;
+            
+          
+         
+        }
+
+        /* Portafolio */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .project {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-texto);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            background-color: #FF6B6B;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #FF9E7D;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header con logo + nombre -->
+<header>
+  <div class="logo-container">
+    <img class="logo-img" src="Agregar un título.svg" alt="Tu logo">
+           
+        </div>
+    </header>
+
+ 
+<div class="areas-trabajo">
+        <a href="BOOKIndex.html">Inicio</a>
+        <a href="Portafolio.html">Portafolio</a>
+        <a href="Sobre_Mi.html">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+ 
+    <section class="hero" id="inicio">
+      <img src="43 sin título_20241024094525.png" alt="Tu foto">
+        <h2>Diseños que dan color a tu vida</h2>
+        <p>Creo ilustraciones, carteles y muchas cosas mas.</p>
+        <a href="Portafolio.html" class="btn">Ver mis trabajos</a>
+    </section>
+
+    
+    <section id="portfolio" style="padding: 2rem;">
+        <h2 style="text-align: center; font-family: 'Lilita One';">Mis Diseños Favoritos</h2>
+        <div class="portfolio">
+            <div class="project">
+                <img src="Trabajos con clientes/04 Landscape Softcover Book Mockup.png" alt="Diseño de libro">
+                <div class="project-info">
+                  <h3>Velvet Bites</h3>
+                    <p>Branding de un dulce emprendimiento.</p>
+              </div>
+          </div>
+            <div class="project">
+                <img src="Empaque/Imagen de WhatsApp 2024-10-27 a las 18.07.04_cea702df.jpg" alt="Diseño de libro">
+                <div class="project-info">
+                  <h3>Rediseño empaque VIKK</h3>
+                    <p>Ilustración y mockup.</p>
+              </div>
+          </div>
+      </div>
+</section>
+
+    
+    <footer id="contacto">
+      <h2>¿Listo para tu próximo proyecto?</h2>
+        <p>Escríbeme a: <strong>mariafernanda.gutierrez954@gmail.com
+</strong></p>
+        <div style="margin-top: 1rem;">
+            <a href="https://www.instagram.com/dig_fernanda_3004?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="Instagram-Logo.png" alt="Instagram" width="45"></a>
+            <a href="https://www.behance.net/marafgutirr5"><img src="Behance-Logo-2020.jpg" alt="Behance" width="45"></a>
+            <a href="www.linkedin.com/in/maria-fernanda-gutierrez-santiago-868a59167"><img src="LinkedIn_icon.svg.png" alt="LinkedIn" width="45"></a>
+        </div>
+    </footer>
+</body>
+</html>

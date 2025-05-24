@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Fernanda Diseñadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primario: #FF9E7D;
+            --color-secundario: #A5E6BA;
+            --color-fondo: #FFF5F1;
+            --color-texto: #3A3A3A;
+            --color-beige: #F5E9D9;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Lilita One', cursive;
+            color: #FF6B6B;
+        }
+
+        header {
+            background-color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-img {
+            width: 200px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .areas-trabajo {
+            background-color: var(--color-beige);
+            padding: 0.8rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .areas-trabajo a {
+            color: var(--color-texto);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 1rem;
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .areas-trabajo a:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            transform: scale(1.05);
+        }
+
+        /* Estilos específicos para contacto */
+        .contact-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .contact-form {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-primario);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #FF6B6B;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #FF9E7D;
+            transform: scale(1.02);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            transition: transform 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+        }
+
+        .social-links img {
+            width: 45px;
+            height: 45px;
+        }
+
+        footer {
+            background: var(--color-texto);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            .contact-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo-img" src="Agregar un título.svg" alt="Logo Fernanda">
+    </header>
+
+    <div class="areas-trabajo">
+        <a href="BOOKindex.html">Inicio</a>
+        <a href="Portafolio.html">Portafolio</a>
+        <a href="Sobre_Mi.html">Sobre Mí</a>
+        <a href="Contacto.html">Contacto</a>
+    </div>
+
+    <main class="contact-container">
+        <div class="contact-header">
+            <h1>📩 Trabajemos Juntos</h1>
+            <p>¿Tienes un proyecto en mente? Escríbeme y hablemos sobre cómo puedo ayudarte.</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div>
+                        <h3>Correo Electrónico</h3>
+                        <p>mariafernanda.gutierrez954@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div>
+                        <h3>Teléfono/WhatsApp</h3>
+                        <p>+52 55 3705 0772</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🕒</div>
+                    <div>
+                        <h3>Horario de Contacto</h3>
+                        <p>Lunes a Viernes<br>9:00 am - 6:00 pm</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div>
+                        <h3>Ubicación</h3>
+                        <p>Ciudad de México, México</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <select id="subject" name="subject">
+                            <option value="branding">Branding/Identidad Visual</option>
+                            <option value="illustration">Ilustración</option>
+                            <option value="packaging">Diseño de Empaques</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/dig_fernanda_3004" target="_blank">
+                <img src="Instagram-Logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.behance.net/marafgutirr5" target="_blank">
+                <img src="Behance-Logo-2020.jpg" alt="Behance">
+            </a>
+            <a href="www.linkedin.com/in/maria-fernanda-gutierrez-santiago-868a59167" target="_blank">
+                <img src="LinkedIn_icon.svg.png" alt="LinkedIn">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Fernanda Diseñadora. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

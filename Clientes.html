@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes | Fernanda Diseñadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primario: #FF9E7D;
+            --color-secundario: #A5E6BA;
+            --color-fondo: #FFF5F1;
+            --color-texto: #3A3A3A;
+            --color-beige: #F5E9D9;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Lilita One', cursive;
+            color: #FF6B6B;
+        }
+
+        header {
+            background-color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-img {
+            width: 200px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .areas-trabajo {
+            background-color: var(--color-beige);
+            padding: 0.8rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .areas-trabajo a {
+            color: var(--color-texto);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 1rem;
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .areas-trabajo a:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            transform: scale(1.05);
+        }
+
+        .project-detail-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .project-detail-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #FF6B6B;
+            font-size: 2.5rem;
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .project-item {
+            display: flex;
+            gap: 2rem;
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+
+        .project-images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            min-width: 300px;
+        }
+
+        .project-images img {
+            width: 100%;
+            border-radius: 10px;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-images img:hover {
+            transform: scale(1.03);
+        }
+
+        .project-info {
+            flex: 1;
+            padding: 0 1rem;
+        }
+
+        .project-date {
+            color: #777;
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .project-description {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .project-details {
+            background-color: var(--color-fondo);
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+
+        .client-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .client-features span {
+            font-weight: 600;
+        }
+
+        .testimonial {
+            font-style: italic;
+            position: relative;
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .testimonial::before {
+            content: """;
+            font-size: 3rem;
+            position: absolute;
+            left: -0.5rem;
+            top: -1.5rem;
+            color: #FF9E7D;
+            opacity: 0.3;
+        }
+
+        .client-logo {
+            max-width: 150px;
+            max-height: 60px;
+            object-fit: contain;
+            margin: 0.5rem 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin: 3rem auto 1rem;
+            background-color: #FF6B6B;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #FF9E7D;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: var(--color-texto);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .project-item {
+                flex-direction: column;
+            }
+            .project-images {
+                min-width: auto;
+            }
+            .client-features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo-img" src="Agregar un título.svg" alt="Logo Fernanda">
+    </header>
+
+    <div class="areas-trabajo">
+        <a href="BOOKindex.html">Inicio</a>
+        <a href="Portafolio.html">Portafolio</a>
+        <a href="Sobre_Mi.html">Sobre Mí</a>
+        <a href="Contacto.html">Contacto</a>
+    </div>
+
+    <main class="project-detail-container">
+        <h1 class="project-detail-title">🤝 Trabajos con Clientes</h1>
+        
+        <div class="project-list">
+           
+            <div class="project-item">
+                <div class="project-images">
+                    <img src="Trabajos con clientes/Sticker.jpg" alt="Branding Velvet Bites">
+                    <img src="Trabajos con clientes/01 Landscape Softcover Book Mockup.png" alt="Aplicaciones Velvet Bites">
+                </div>
+                <div class="project-info">
+                    <img src="Trabajos con clientes/123 sin título_20250506102628.jpg" alt="Logo Velvet Bites" class="client-logo">
+                    <h2>Velvet Bites</h2>
+                    <p class="project-date">Trabajado: Febrero-Mayo 2025</p>
+                    <p class="project-description">Rediseño completo de identidad visual para pastelería artesanal premium. Desarrollo del sistema de branding incluyendo logo, paleta cromática, packaging y papelería, con un enfoque en texturas táctiles y acabados de lujo.</p>
+                    
+                    <div class="project-details">
+                        <div class="client-features">
+                            <p><span>Sector:</span> Gastronomía/Pastelería</p>
+                            <p><span>Servicios:</span> Branding completo</p>
+                            <p><span>Elementos:</span> Logo, Packaging, Papelería</p>
+                            <p><span>Técnicas:</span> Ilustración vectorial</p>
+                            <p><span>Duración:</span> 3 meses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="project-item">
+                <div class="project-images">
+                    <img src="Trabajos con clientes/Silkery_Mesa de trabajo 1.jpg" alt="Proyecto Silkery">
+                </div>
+                <div class="project-info">
+                    <h2>Silkery</h2>
+                    <p class="project-date">Proyecto en proceso</p>
+                    <p class="project-description">Branding para pastelería artesanal especializada en postres gourmet. Desarrollo de identidad visual coherente que comunica elegancia y calidad.</p>
+                    
+                    <div class="project-details">
+                        <div class="client-features">
+                            <p><span>Sector:</span> Gastronomía/Pastelería</p>
+                            <p><span>Servicios:</span> Branding completo</p>
+                            <p><span>Elementos:</span> Logo, Packaging, Papelería</p>
+                            <p><span>Técnicas:</span> Ilustración vectorial</p>
+                            <p><span>Estado:</span> En desarrollo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="project-item">
+                <div class="project-images">
+                    <img src="Trabajos con clientes/Comision1.1.jpg" alt="Comisión de dibujo">
+                </div>
+                <div class="project-info">
+                    <h2>Comisión de Dibujo</h2>
+                    <p class="project-date">Trabajado: Enero 2025</p>
+                    <p class="project-description">Ilustración personalizada creada como encargo especial, combinando técnicas digitales y texturas manuales para un resultado único.</p>
+                    
+                    <div class="project-details">
+                        <div class="client-features">
+                            <p><span>Técnica:</span> Ilustración digital</p>
+                            <p><span>Estilo:</span> Realismo fantástico</p>
+                            <p><span>Tiempo:</span> 2 semanas</p>
+                            <p><span>Software:</span> Photoshop, Procreate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	  <div class="project-item">
+                <div class="project-images">
+                    <img src="Trabajos con clientes/IMG_20250524_132019.jpg" alt="Comisión especial de ilustración">
+                  
+              </div>
+        <div class="project-info">
+          <h2>Comisión Especial: Retrato</h2>
+                    <p class="project-date">Trabajado: Marzo 2025</p>
+                    <p class="project-description">Retrato ilustrado por encargo con estilo "anime", creado para regalo personalizado. Combina técnicas de pintura digital.</p>
+                    
+                    <div class="project-details">
+                        <div class="client-features">
+                            <p><span>Técnica:</span> Digital + Texturas</p>
+                            <p><span>Estilo:</span> Anime</p>
+                            <p><span>Tiempo:</span>2 días</p>
+                            <p><span>Formato:</span> jpg</p>
+                            <p><span>Tamaño:</span> A3 (300DPI)</p>
+                            <p><span>Software:</span> Ibis Paint Pro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="project-item">
+                <div class="project-images">
+                    <img src="Trabajos con clientes/Screenshot_2025-05-24-14-06-22-772_com.facebook.katana.jpg" alt="Imagen antes del rediseño">
+                    <img src="Trabajos con clientes/88 sin título.jpg" alt="Imagen después del rediseño">
+                </div>
+                <div class="project-info">
+                    <h2>Rediseño de Imagen Corporativa</h2>
+                  <p class="project-date">Trabajado: Abril 2025</p>
+                    <p class="project-description">Modernización completa de identidad visual para el psicologo David Jimenez. El rediseño incluye nuevo logotipo, sistema de color y aplicaciones gráficas para comunicar mayor profesionalismo y actualidad; el proyecto esta en fase de boceteado.</p>
+                    <div class="project-details">
+                        <div class="client-features">
+                          <p><span>Sector:</span> Psicologia</p>
+                          <p><span>Servicios:</span> Rediseño de marca</p>
+                            <p><span>Elementos:</span> Logo, Tarjetas, Presentaciones</p>
+                            <p><span>Técnicas:</span> Diseño vectorial</p>
+							<p><span>Duración:</span> En proceso </p>
+                            <p><span>Resultado:</span> +30% percepción de profesionalismo</p>
+                      </div>
+                  </div>
+              </div>
+      </div>
+        </div>
+
+
+        <div style="text-align: center;">
+            <a href="portafolio.html" class="back-button">← Volver al Portafolio</a>
+        </div>
+    </main>
+
+    <footer>
+        <h2>¿Listo para tu próximo proyecto?</h2>
+        <p>Escríbeme a: <strong>mariafernanda.gutierrez954@gmail.com</strong></p>
+        <div style="margin-top: 1rem;">
+            <a href="https://www.instagram.com/dig_fernanda_3004"><img src="Instagram-Logo.png" alt="Instagram" width="45"></a>
+            <a href="https://www.behance.net/marafgutirr5"><img src="Behance-Logo-2020.jpg" alt="Behance" width="45"></a>
+            <a href="www.linkedin.com/in/maria-fernanda-gutierrez-santiago-868a59167"><img src="LinkedIn_icon.svg.png" alt="LinkedIn" width="45"></a>
+        </div>
+    </footer>
+</body>
+</html>
